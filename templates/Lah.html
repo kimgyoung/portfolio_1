@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹사이트 제목</title>
+    <style>
+        /* 스타일 시트 작성 */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center; /* 메뉴 가운데 정렬 */
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0 auto; /* 메뉴 가운데 정렬 */
+            display:inline-block; /* 메뉴 항목들이 한 줄에 표시되도록 함 */
+        }
+
+       .menu li {
+         display:inline-block;
+         margin-right:10px;
+         font-size:18px;
+         font-weight:bold;
+
+       }
+
+       .menu li a {
+         color:#fff;
+         text-decoration:none;
+
+         /* 메뉴 항목에 마우스 호버 효과 */
+         transition-duration:.5s;
+         border-bottom:solid transparent .15em
+       }
+
+       .menu li a:hover {border-bottom:solid white .15em}
+
+      section#section2 {
+           display:flex ;
+           justify-content :space-around ;
+           align-items:center ;
+      }
+
+      section#section2 img{
+          width :40% ; /* 이미지 크기 조절 */
+      }
+
+      section#section2 div{
+          width :50% ; /* 글 영역 크기 조절 */
+          text-align:left ;
+          padding-left :20 px ;
+      }
+
+       footer {
+           background-color:#007bff ;
+           color:#fff ;
+           text-align:center ;
+           padding :20 px ;
+       }
+    </style>
+
+</head>
+<body>
+<!-- 헤더 -->
+<header>
+    <!-- 로고 또는 사이트 이름 등을 포함한 헤더 내용 작성 -->
+    <!-- 필요한 메뉴 항목을 추가하세요 -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#">newWindow팀 이아현</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 섹션 1 -->
+<section id="section1">
+    <!-- 섹션의 내용 작성 -->
+    <h2 style="font-family:'Roboto', sans-serif;">newWindow팀의 팀장</h2>
+    <p>반갑습니다 newWindow팀의 팀장 이아현입니다. 무슨 일이든 함께 해쳐나가는 팀 만들겠습니다.</p>
+</section>
+
+<!-- 섹션 2 -->
+<section id="section2">
+     <!-- 이미지 추가, 실제 경로로 변경 필요-->
+    <img src="window.jpg" alt="사진설명" width="500px" height="300px" class="center">
+    <div>
+        <!-- 섹션의 내용 작성 -->
+        <h2 style="font-family:'Roboto', sans-serif;">1996년생</h2>
+        <p>MBTI : ENTP</p>
+    </div>
+
+</section>
+
+
+<!--푸터-->
+<footer>©2023 웹사이트 이름.All rights reserved.</footer>
+
+
+</body>
+</html>
